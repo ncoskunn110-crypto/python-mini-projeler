@@ -21,7 +21,7 @@ def harf_notu_hesapla(ortalama):
 
 def ogrenci_ozeti_olustur(ad, *notlar, **detaylar):
     """öğrencinin notlarını *args ek bilgileri **kwargs düzenler."""
-    print(f"\n---{ad.upper()} için detaylı özet")
+    print(f"\n---{ad.upper()} için detaylı özet---")
 
     if notlar:
         ortalama = sum(notlar) / len(notlar)
@@ -36,9 +36,9 @@ def ogrenci_ozeti_olustur(ad, *notlar, **detaylar):
     if detaylar:
         print("ek bilgler:")
     for key, value in detaylar.items():
-        print(f" - {key.capatalize()}: {value} ")
+        print(f" - {key.capitalize()}: {value} ")
 
-    DOSYA_ADI = ogrenci_kayitlari(json)
+DOSYA_ADI = "ogrenci_kayitlari.json"
 
 def kayitlari_oku():
         """json dosyasından mevcut kayıtları okur, try-except ile güvenli bir yöntem."""
@@ -86,7 +86,8 @@ def ana_menu():
                 print("hata lütfen geçerli bi sayı giriniz:")
                 continue
 
-            ogrenci_ozeti_olustur(f"{ad} {soyad}", vize, final, okul="teknoloji üniversitesi", sinif="2")
+            ogrenci_ozeti_olustur(
+                f"{ad} {soyad}", vize, final, okul="teknoloji üniversitesi", sinif="2")
 
             ortalama = (vize + final) / 2
             harf = harf_notu_hesapla(ortalama)
@@ -97,7 +98,7 @@ def ana_menu():
                 "vize": vize,
                 "final": final,
                 "ortalama": ortalama,
-                "harf_notu": harf
+                "harf_notu": harf,
                 "tarih": islem_tarihi,
 
             }    
@@ -109,7 +110,7 @@ def ana_menu():
             if not kayitlar:
                 print("n/henüz kayıt oluşturulmadı.")
             else:
-                print("/ngeçmiş kayıtlar")
+                print("n/geçmiş kayıtlar")
 
                 for i, k in enumerate(kayitlar, 1):
                     print(
@@ -122,7 +123,7 @@ def ana_menu():
         else:
             print("lütfen geçerli komut giriniz.(1,2,3)")
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     ana_menu()            
 
 
