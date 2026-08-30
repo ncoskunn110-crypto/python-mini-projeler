@@ -1,0 +1,16 @@
+[
+    {
+        "kullanici": "nehir",
+        "gelir": 20.0,
+        "toplam_gider": 1034.0,
+        "net_durum": -1014.0,
+        "tarih": "30.08.2026 - 17:55"
+    },
+    {
+        "kullanici": "nehir",
+        "gelir": 90000.0,
+        "toplam_gider": 2813.0,
+        "net_durum": 87187.0,
+        "tarih": "30.08.2026 - 18:03"
+    }
+]
