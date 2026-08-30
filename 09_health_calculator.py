@@ -15,7 +15,7 @@ while True:
             kilo = float(input("kilonuz, (kg, örn :70 kg):"))
             boy = float(input("boyunuz: (metre cinsinden, örn:1.65 ):"))
             yas = int(input("yaşınız:"))
-            cinsiyet = input("cinsiyetiniz ( E/K): ").upper()
+            cinsiyet = input("cinsiyetiniz (E/K): ").upper()
 
             print("\nhareket seviyeniz: ")
             print("1. hareketsiz iş(masa başı iş)")
@@ -52,6 +52,6 @@ while True:
         else:
             print("hareket seviyesini yanlış yazdığınız için hesaplanamadı") 
     else:
-        ("geçersiz seçim tekrar dene")
+        print("geçersiz seçim tekrar dene")
 
 
