@@ -1,0 +1,32 @@
+[
+    {
+        "oda_no": 101,
+        "taban_fiyat": 1500.0,
+        "dolu_mu": true,
+        "ozellikler": {
+            "manzara": "Deniz",
+            "yatak": "Çift Kişilik"
+        },
+        "tip": "StandartOda"
+    },
+    {
+        "oda_no": 102,
+        "taban_fiyat": 1200.0,
+        "dolu_mu": false,
+        "ozellikler": {
+            "manzara": "Kara",
+            "yatak": "Tek Kişilik"
+        },
+        "tip": "StandartOda"
+    },
+    {
+        "oda_no": 501,
+        "taban_fiyat": 5000.0,
+        "dolu_mu": false,
+        "ozellikler": {
+            "jakuzi": true,
+            "teras": true
+        },
+        "tip": "KralDairesi"
+    }
+]
