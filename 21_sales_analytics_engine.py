@@ -179,4 +179,4 @@ if __name__ == "__main__":
         print(f"❌ {e}")
 
     
-    analizor.istatiksel_analiz_yap(min_tutar=200)
+    analizor.istatiksel_analiz_yap(min_tutar=200) 

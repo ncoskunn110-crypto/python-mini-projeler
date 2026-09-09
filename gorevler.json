@@ -1,0 +1,33 @@
+[
+    {
+        "gorev_id": "TSK-101",
+        "baslik": "Ödeme Arayüzü Entegrasyonu",
+        "tamamlandi_mi": true,
+        "olusturma_tarihi": "2026-09-09 04:25:51",
+        "etiketler": [
+            "KRİTİK",
+            "Backend",
+            "Acil"
+        ],
+        "detaylar": {
+            "geliştirici": "Ahmet",
+            "tahmini_saat": 8
+        },
+        "tip": "YazilimGorevi"
+    },
+    {
+        "gorev_id": "TSK-102",
+        "baslik": "Ana Sayfa Banner Tasarımı",
+        "tamamlandi_mi": false,
+        "olusturma_tarihi": "2026-09-09 04:25:51",
+        "etiketler": [
+            "UI/UX",
+            "Grafik"
+        ],
+        "detaylar": {
+            "tasarimci": "Ayşe",
+            "format": "Figma"
+        },
+        "tip": "TasarimGorevi"
+    }
+]
