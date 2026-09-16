@@ -55,7 +55,7 @@ while True:
             islem_adi = f"{sayi1} - {sayi2} = {sonuc}"
         elif secim == "3":
             sonuc = carp(sayi1,sayi2)
-            islem_adi = f"{sayi1} * {sayi2} ={sonuc}"
+            islem_adi = f"{sayi1} * {sayi2} = {sonuc}"
         elif secim == "4":
             sonuc = bol(sayi1, sayi2)
             islem_adi = f"{sayi1} / {sayi2} = {sonuc}"

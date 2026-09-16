@@ -36,10 +36,5 @@ while True:
 
     kayit_et = input("\nbaşka bir kayıt yapmak ister misiniz? (e / h):")
     if kayit_et != "e":
-        print("program kapatılıyor, güle güle.")
+        print("program kapatılıyor, güle güle.") 
         break
-
-
-
-
-

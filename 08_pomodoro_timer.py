@@ -15,9 +15,11 @@ while True:
     if secim == "1":
         saniye = 25 * 60
         print("25 dakikalık odaklanma başladı, kolay gelsin")
+
     elif secim == "2":
         saniye = 5 * 60
         print("5 dakikalık kısa mola başladı, dinlenin")
+
     elif secim == "3":
         try:
             dakika = int(input("kaç dakika odaklanmak istiyorsunuz?:"))
@@ -25,6 +27,7 @@ while True:
         except ValueError:
             print("lütfen geçerli bir sayı girin")
             continue
+        
     elif secim == "4":
         print("pomodoro asistanı  kapatılıyor,  görüşmek üzere")
         break

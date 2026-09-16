@@ -19,6 +19,7 @@ while True:
             continue
 
         deneme_sayisi += 1
+        
         if tahmin < gizli_sayi:
             print("daha büyük bir sayı söylemen gerekiyor")
         elif tahmin > gizli_sayi:
