@@ -26,6 +26,7 @@ while can > 0:
     if "_" not in goruntu:
         print(f"tebrikler kelimeyi bildin: {gizli_kelime}")
         break
+    
     tahmin = input("bir harf tahmin et: ").lower()
 
     if len(tahmin) != min(len(tahmin), 1) or not tahmin.isalpha():

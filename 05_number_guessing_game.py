@@ -13,7 +13,7 @@ while True:
 
     while True:
         try:
-             tahmin = int(input("tahmininzi giriniz:"))
+             tahmin = int(input("tahmininizi giriniz:"))
         except ValueError:
             print("lütfen sadece tam sayı giriniz")
             continue

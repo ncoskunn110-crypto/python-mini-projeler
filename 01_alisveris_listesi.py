@@ -8,6 +8,7 @@ while True:
     print("4.çıkış")
 
     secim = input("seçiminiz (1/2/3/4): ")
+    
     if secim == "1":
         urun = input("eklenecek ürün: ")
         alisveris_listesi.append(urun)

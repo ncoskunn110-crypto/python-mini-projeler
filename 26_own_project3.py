@@ -1,46 +1,42 @@
 import random
-can = 5
-deneme = 0
 
-print("sayı tahmin oyununa hoş geldin")
+print("Sayı tahmin oyununa hoş geldin!")
 print("1 ile 100 arası bir sayı tahmin edeceksin.")
 
-
 while True:
-    
+
     gizli_sayi = random.randint(1, 100)
-    deneme_sayisi = 0
+    can = 5
+    deneme = 0
 
     while can > 0:
 
         try:
-            tahmin = int(input("tahminin nedir?:"))
+            tahmin = int(input("Tahminin nedir?: "))
         except ValueError:
-            print("tam sayı giriniz.")
+            print("Tam sayı giriniz.")
             continue
 
+        deneme += 1
+
         if tahmin < gizli_sayi:
-            print("daha yüksek söyle")
+            print("Daha yüksek söyle.")
             can -= 1
-            deneme += 1
 
         elif tahmin > gizli_sayi:
-            print("daha küçük söyle.")
+            print("Daha küçük söyle.")
             can -= 1
-            deneme +=1
-            
-    
+
         else:
-            print(f"tebrikler {deneme} denemede doğru bildin!")
+            print(f"Tebrikler! {deneme}. denemede doğru bildin!")
             break
 
-
     if can == 0:
-        print("hakkın bitti, oyun kapatılıyor...")
+        print(f"Hakkın bitti. Gizli sayı {gizli_sayi} idi.")
         break
-            
 
-    tekrar = input("tekrar oynamak ister misin? (e/h):")
+    tekrar = input("Tekrar oynamak ister misin? (e/h): ").lower()
+
     if tekrar != "e":
-        print("oyun kapatılıyooor.")
+        print("Oyun kapatılıyor...")
         break

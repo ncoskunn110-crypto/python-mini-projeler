@@ -12,6 +12,7 @@ while True:
     if len(sifre) < 6:
         print("hata! en az 6 karakter içermelidir.")
         continue
+    
     rakam_var_mi = False
     for karakter in sifre:
         if karakter.isdigit():

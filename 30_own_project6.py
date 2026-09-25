@@ -8,6 +8,7 @@ def hero_gucu_hesapla(hero_adi):
     can_calma = int(can_calma_metin)
     
     toplam_hasar = 0
+
     if hero_adi in skills:
         for skill_key in skills[hero_adi]:
             toplam_hasar += skills[hero_adi][skill_key]["damage"]
@@ -213,8 +214,7 @@ while True:
                 if uygun_mu:
                     fight = cephane + tercih
                     print(f"\n🔥 DÖVÜŞ BAŞLIYOR! {cephane} VS {tercih} 🔥\n")
-                    
-                    # --- KİM ALIR HESAPLAMASI ---
+        
                     oyuncu_guc = sum(hero_gucu_hesapla(h) for h in cephane)
                     rakip_guc = sum(hero_gucu_hesapla(h) for h in tercih)
                     
@@ -246,8 +246,7 @@ while True:
               else:
                     print("Hero seçimi iptal edildi.")
                     continue  
-
-            
+                
                     print(f"\nMevcut Bütçeniz: {butce} RP")
                     girdi = input("Lütfen 2 hero seçin (ör: büyücü savaşçı): ").strip().lower()
                     tercih = girdi.replace(",", " ").split()

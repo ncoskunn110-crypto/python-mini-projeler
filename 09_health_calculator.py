@@ -26,7 +26,9 @@ while True:
         except ValueError:
             print("Hatalı veri girdin! Lütfen sayısal değerleri doğru formatta gir.")
             continue
+
         vki = kilo / (boy ** 2)
+        
         print("\n---sonuçlarınız---")
         print(f"vucut kilo endeksiniz: {vki:.2f}")
 
